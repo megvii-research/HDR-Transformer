@@ -1,0 +1,30 @@
+{
+    "data_dir": "./data",
+    "sub_set": "sig17_training_crop128_stride64",
+    "dataset_type": "sig17",
+    "transform_type": "hdr_transformer",
+    "net_type": "hdr_transformer",
+    "loss_type": "l1_loss_mu",
+    "python": "~/.conda/envs/hdr_transformer/bin/python",
+    "model_name": "hdr_transformer",
+    "eval_type": [
+        "val",
+        "test"
+    ],
+    "major_metric": "psnr_mu",
+    "metric_rule": "Ascende",
+    "save_mode": "local",
+    "bucket_name": "",
+    "learning_rate": 2e-4,
+    "train_batch_size": 4,
+    "eval_batch_size": 1,
+    "num_epochs": 100,
+    "dropout_rate": 0.8,
+    "num_channels": 32,
+    "save_summary_steps": 100,
+    "num_workers": 4,
+    "cpu": 4,
+    "gpu": 4,
+    "memory": 40000,
+    "cuda_seed": 443
+}

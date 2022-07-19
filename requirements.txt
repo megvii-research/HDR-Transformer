@@ -1,0 +1,12 @@
+boto3==1.21.37
+coloredlogs==15.0.1
+easydict==1.9
+imageio==2.10.4
+MegEngine==1.8.3
+numpy==1.19.5
+opencv-python==4.5.5
+prettytable==2.5.0
+tensorboardX==2.5.1
+termcolor==1.1.0
+tqdm==4.64.0
+scikit-image==0.17.2
