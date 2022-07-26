@@ -10,6 +10,15 @@ This is the official MegEngine implementation of our ECCV2022 paper: *Ghost-free
 * **2022.07.19** The source code is now available.
 * **2022.07.04** Our paper has been accepted by ECCV 2022.
 
+## Abstract 
+High dynamic range (HDR) deghosting algorithms aim to generate ghost-free HDR images with realistic details. Restricted by the locality of the receptive field, existing CNN-based methods are typically prone to producing ghosting artifacts and intensity distortions in the presence of large motion and severe saturation. In this paper, we propose a novel Context-Aware Vision Transformer (CA-ViT) for ghost-free high dynamic range imaging. The CA-ViT is designed as a dual-branch architecture, which can jointly capture both global and local dependencies. Specifically, the global branch employs a window-based Transformer encoder to model long-range object movements and intensity variations to solve ghosting. For the local branch, we design a local context extractor (LCE) to capture short-range image features and use the channel attention mechanism to select informative local details across the extracted features to complement the global branch. By incorporating the CA-ViT as basic components, we further build the HDR-Transformer, a hierarchical network to reconstruct high-quality ghost-free HDR images. Extensive experiments on three benchmark datasets show that our approach outperforms state-of-the-art methods qualitatively and quantitatively with considerably reduced computational budgets.
+
+## Pipeline
+![pipeline](https://user-images.githubusercontent.com/1344482/181019035-dc3b141d-0cd7-407e-83c9-8c6fbbc36d4f.JPG)
+Illustration of the proposed CA-ViT. As shown in Fig (a), the CA-ViT is designed as a dual-branch architecture where the global branch models long-range dependency among image contexts through a multi-head Transformer encoder, and the local branch explores both intra-frame local details and inner-frame feature relationship through a local context extractor. Fig. (b) depicts the key insight of our HDR deghosting approach with CA-ViT. To remove the residual ghosting artifacts caused by large motions of the hand (marked with blue), long-range contexts (marked with red), which are required to hallucinate reasonable content in the ghosting area, are modeled by the self-attention in the global branch. Meanwhile, the well-exposed non-occluded local regions (marked with green) can be effectively extracted with convolutional layers and fused by the channel attention in the local branch.
+
+
+
 ## Usage
 
 ### Requirements
@@ -71,6 +80,11 @@ To evaluate, run:
 ```
 python evaluate.py --model_dir experiments --restore_file experiments/val_model_best.pth
 ```
+
+## Results
+![results](https://user-images.githubusercontent.com/1344482/181019317-94fa0ce6-a386-44a0-b59b-c10def8bc8ce.JPG)
+
+
 
 ## Acknowledgement
 The MegEngine version of the Swin-Transformer is based on [Swin-Transformer-MegEngine](https://github.com/MegEngine/swin-transformer). Our work is inspired the following works and uses parts of their official implementations:
