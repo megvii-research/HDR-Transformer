@@ -4,9 +4,10 @@ By Zhen Liu<sup>1</sup>, Yinglong Wang<sup>2</sup>, Bing Zeng<sup>3</sup> and [S
 
 <sup>1</sup>Megvii Technology, <sup>2</sup>Noah’s Ark Lab, Huawei Technologies, <sup>3</sup>University of Electronic Science and Technology of China
 
-This is the official MegEngine implementation of our ECCV2022 paper: *Ghost-free High Dynamic Range Imaging with Context-aware Transformer* ([HDR-Transformer]()). The PyTorch version is coming soon.
+This is the official MegEngine implementation of our ECCV2022 paper: *Ghost-free High Dynamic Range Imaging with Context-aware Transformer* ([HDR-Transformer](https://arxiv.org/abs/2208.05114)). The PyTorch version is coming soon.
 
 ## News
+* **2022.08.11** The arXiv version of our paper is now available.
 * **2022.07.19** The source code is now available.
 * **2022.07.04** Our paper has been accepted by ECCV 2022.
 
@@ -23,7 +24,7 @@ Illustration of the proposed CA-ViT. As shown in Fig (a), the CA-ViT is designed
 
 ### Requirements
 * Python 3.7.0
-* MegEngine 1.8.3
+* MegEngine 1.8.3+
 * CUDA 10.0 on Ubuntu 18.04
 
 Install the require dependencies:
