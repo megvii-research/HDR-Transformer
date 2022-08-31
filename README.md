@@ -4,9 +4,10 @@ By Zhen Liu<sup>1</sup>, Yinglong Wang<sup>2</sup>, Bing Zeng<sup>3</sup> and [S
 
 <sup>1</sup>Megvii Technology, <sup>2</sup>Noah’s Ark Lab, Huawei Technologies, <sup>3</sup>University of Electronic Science and Technology of China
 
-This is the official MegEngine implementation of our ECCV2022 paper: *Ghost-free High Dynamic Range Imaging with Context-aware Transformer* ([HDR-Transformer](https://arxiv.org/abs/2208.05114)). The PyTorch version is coming soon.
+This is the official MegEngine implementation of our ECCV2022 paper: *Ghost-free High Dynamic Range Imaging with Context-aware Transformer* ([HDR-Transformer](https://arxiv.org/abs/2208.05114)). The PyTorch version is available at [HDR-Transformer-PyTorch](https://github.com/liuzhen03/HDR-Transformer-PyTorch).
 
 ## News
+* **2022.08.26** The PyTorch implementation is now avaible.
 * **2022.08.11** The arXiv version of our paper is now available.
 * **2022.07.19** The source code is now available.
 * **2022.07.04** Our paper has been accepted by ECCV 2022.
@@ -96,7 +97,14 @@ The MegEngine version of the Swin-Transformer is based on [Swin-Transformer-MegE
 We thank the respective authors for open sourcing their methods.
 
 ## Citation
-[to be updated]
+```
+@article{liu2022ghost,
+  title={Ghost-free High Dynamic Range Imaging with Context-aware Transformer},
+  author={Liu, Zhen and Wang, Yinglong and Zeng, Bing and Liu, Shuaicheng},
+  journal={arXiv preprint arXiv:2208.05114},
+  year={2022}
+}
+```
 
 ## Contact
 If you have any questions, feel free to contact Zhen Liu at liuzhen03@megvii.com.
