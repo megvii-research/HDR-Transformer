@@ -98,11 +98,13 @@ We thank the respective authors for open sourcing their methods.
 
 ## Citation
 ```
-@article{liu2022ghost,
+@inproceedings{liu2022ghost,
   title={Ghost-free High Dynamic Range Imaging with Context-aware Transformer},
   author={Liu, Zhen and Wang, Yinglong and Zeng, Bing and Liu, Shuaicheng},
-  journal={arXiv preprint arXiv:2208.05114},
-  year={2022}
+  booktitle={European Conference on Computer Vision},
+  pages={344--360},
+  year={2022},
+  organization={Springer}
 }
 ```
 
